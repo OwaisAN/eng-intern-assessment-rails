@@ -9,5 +9,28 @@
                     turbo_method: :delete,
                     turbo_confirm: "Are you sure?"
                   } %></li>
-  <li><%= link_to "Home", root_path %></li>  
+  
 </ul>
+
+<div class="article-show-container">
+  <div class="article-header">
+    <h1 class="article-title"><%= @article.title %></h1>
+  </div>
+
+  <div class="article-content">
+    <p><%= @article.content %></p>
+  </div>
+
+  <div class="article-actions">
+    <ul>
+      <li><%= link_to "Edit", edit_article_path(@article), class: "action-button edit-button" %></li>
+      <li><%= link_to "Delete", article_path(@article), class: "action-button delete-button", data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>
+      <li><%= link_to "Home", root_path, class: "action-button home-button" %></li>
+    </ul>
+  </div>
+</div>
+
+

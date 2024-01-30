@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  
+  header {
+    background-color: #24292e;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+  
+    nav {
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          display: inline-block;
+          margin-right: 20px;
+  
+          a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+  
+            &:hover {
+              color: #f39c12;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+  
+    .article-list {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+  
+      &:hover {
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
+  
+      h2 {
+        margin-top: 0;
+        font-size: 2rem;
+        color: #333;
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          margin-bottom: 1.5rem;
+  
+          a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            font-size: 1.4rem;
+            transition: color 0.3s ease;
+  
+            &:hover {
+              color: #3498db;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* Existing styles for other pages */
+
+/* Add these styles for the article view */
+.article-show-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .article-show-container .article-header {
+    text-align: center;
+  }
+  
+  .article-show-container .article-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .article-show-container .article-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .article-show-container .article-actions {
+    margin-top: 1.5rem;
+  }
+  
+  .article-show-container .article-actions ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .article-show-container .article-actions li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .article-show-container .article-actions .action-button {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .article-show-container .article-actions .action-button.edit-button {
+    background-color: #4285f4;
+  }
+  
+  .article-show-container .article-actions .action-button.delete-button {
+    background-color: #dc3545;
+  }
+  
+  .article-show-container .article-actions .action-button.home-button {
+    background-color: #007bff;
+  }
+  
+  .article-show-container .article-actions .action-button:hover {
+    opacity: 0.8;
+  }
+  
+  
